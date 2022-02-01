@@ -31,7 +31,8 @@ const Form = () => {
 
 
 
-    React.createElement("h3", null, "Copy the image address of your Bomb and paste it into the fields below and generate a Wildfire collage of your bomb, then take a screenshot."), /*#__PURE__*/
+    React.createElement("h3", null, "Copy the image address of your fav Bomb(s) and paste it into the fields below and generate a Wildfire collage of your bomb, then take a screenshot."), /*#__PURE__*/
+
 
 
 
