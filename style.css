@@ -4,9 +4,23 @@ input {
   margin: 10px;
 }
 
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 350px;
+}
+
+input {
+  width: 250px;
+}
+
 div.wildfire {
-  width: 600px;
-  height: 600px;
+  width: 1000px;
+  height: 1000px;
 }
 
 div#one {
@@ -60,12 +74,17 @@ div.wildfire {
   position: absolute;
 }
 
+#abs {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+
 html,
 body {
   height: 100%;
-}
-
-
-body {
+  font-family: sans-serif;
+  color: grey;
   background-color: black;
 }
