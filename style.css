@@ -1,0 +1,71 @@
+input {
+  display: block;
+  padding: 10px;
+  margin: 10px;
+}
+
+div.wildfire {
+  width: 600px;
+  height: 600px;
+}
+
+div#one {
+  background-size: cover;
+  clip-path: polygon(
+    0% 0%,
+    35% 0%,
+    25% 40%,
+    37% 30%,
+    27% 70%,
+    40% 58%,
+    30% 100%,
+    0% 100%
+  );
+}
+
+div#two {
+  background-size: cover;
+  clip-path: polygon(
+    35% 0%,
+    25% 40%,
+    37% 30%,
+    27% 70%,
+    40% 58%,
+    30% 100%,
+    65% 100%,
+    75% 58%,
+    62% 70%,
+    77% 30%,
+    60% 40%,
+    70% 0%,
+    35% 0%
+  );
+}
+
+div#three {
+  background-size: cover;
+  clip-path: polygon(
+    70% 0%,
+    100% 0%,
+    100% 100%,
+    65% 100%,
+    75% 58%,
+    62% 70%,
+    77% 30%,
+    60% 40%
+  );
+}
+
+div.wildfire {
+  position: absolute;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+
+body {
+  background-color: black;
+}
