@@ -21,7 +21,14 @@ const Form = () => {
 
   return /*#__PURE__*/(
     React.createElement("div", null, /*#__PURE__*/
-    React.createElement("h1", null, "ABS x Wildfire"), /*#__PURE__*/
+    React.createElement("h1", null, "ABS x Wildfire",
+    " ", /*#__PURE__*/
+    React.createElement("img", {
+      width: "40px",
+      src: "//cdn.shopify.com/s/files/1/1520/5960/t/423/assets/logo-wildfire.svg?v=1855630928499410503",
+      alt: "The Hundreds" })), /*#__PURE__*/
+
+
     React.createElement("h2", null, "by ", /*#__PURE__*/
     React.createElement("a", { href: "https://opensea.io/b0ring_gray" }, "boringgrey"), " (", /*#__PURE__*/
     React.createElement("a", { href: "https://twitter.com/BoringGrey" }, "twitter"), ")"), /*#__PURE__*/
