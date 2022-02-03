@@ -1,11 +1,11 @@
 const Form = () => {
   const [state, setState] = React.useState({
     bombOne:
-    "https://lh3.googleusercontent.com/fpxkW42dJqikW4Ed9w0ubqF4QHBsh7jddWeXRzH1OKTubnEYd0ByrvLiXB_7F0xQ3L5lROpxdoUmTJpK2S7r2Au7XSuyQjU7PwG5Qt8=s0",
+    "https://ipfs.io/ipfs/QmQKWCoR8sz9r1mERBrZ67wUqSJXpDdgV3ETJeDhAZ7uaR/3873.png",
     bombTwo:
-    "https://lh3.googleusercontent.com/pksyaB2SBcYZfxvpoOMJA263y3dLSMN55rBvE_TpJvfdzDzvJisNjuZ1li6vH2iOKqdtVU6hUhIRqkyFyVTGyWy_RNYlE-ZUABYr5w=s0",
+    "https://ipfs.io/ipfs/QmQKWCoR8sz9r1mERBrZ67wUqSJXpDdgV3ETJeDhAZ7uaR/2345.png",
     bombThree:
-    "https://lh3.googleusercontent.com/xFsStH9iu1ApdqWe7mSSD0lr9egP3MsorDk8idI7Y5VXDoqvPhb7a_1KBWvdgCvfm_vStUwBGMmgJdF6Mm8GOdHmeQrG-GbqtZnq=s0" });
+    "https://ipfs.io/ipfs/QmQKWCoR8sz9r1mERBrZ67wUqSJXpDdgV3ETJeDhAZ7uaR/134.png" });
 
 
   const submitHandler = e => {
@@ -15,7 +15,10 @@ const Form = () => {
   const changeHandler = e => {
     setState(prev => ({
       ...prev,
-      [e.target.name]: e.target.value }));
+      [e.target.name]:
+      "https://ipfs.io/ipfs/QmQKWCoR8sz9r1mERBrZ67wUqSJXpDdgV3ETJeDhAZ7uaR/" +
+      e.target.value +
+      ".png" }));
 
   };
 
@@ -38,7 +41,8 @@ const Form = () => {
 
 
 
-    React.createElement("h3", null, "Copy the image address of your fav Bomb(s) and paste it into the fields below and generate a Wildfire collage of your bomb, then take a screenshot."), /*#__PURE__*/
+    React.createElement("h3", null, "Put the Bomb ID # of your Bomb(s) in the fields below and generate a Wildfire collage of your bombs, then take a screenshot. The images will be taken directly from IPFS in high resolution, so it might take a few seconds to download."), /*#__PURE__*/
+
 
 
 
@@ -46,16 +50,34 @@ const Form = () => {
     React.createElement("form", null, /*#__PURE__*/
     React.createElement("div", { class: "container" }, /*#__PURE__*/
     React.createElement("div", { class: "item" }, /*#__PURE__*/
-    React.createElement("label", { className: "label" }, "image url 1"), /*#__PURE__*/
-    React.createElement("input", { onChange: changeHandler, type: "text", name: "bombOne" })), /*#__PURE__*/
+    React.createElement("label", { className: "label" }, "Bomb ID #"), /*#__PURE__*/
+    React.createElement("input", {
+      onChange: changeHandler,
+      type: "text",
+      name: "bombOne",
+      placeholder: "Bomb ID #",
+      autocomplete: "off" })), /*#__PURE__*/
+
 
     React.createElement("div", { class: "item" }, /*#__PURE__*/
-    React.createElement("label", { className: "label" }, "image url 2"), /*#__PURE__*/
-    React.createElement("input", { onChange: changeHandler, type: "text", name: "bombTwo" })), /*#__PURE__*/
+    React.createElement("label", { className: "label" }, "Bomb ID #"), /*#__PURE__*/
+    React.createElement("input", {
+      onChange: changeHandler,
+      type: "text",
+      name: "bombTwo",
+      placeholder: "Bomb ID #",
+      autocomplete: "off" })), /*#__PURE__*/
+
 
     React.createElement("div", { class: "item" }, /*#__PURE__*/
-    React.createElement("label", { className: "label" }, "image url 3"), /*#__PURE__*/
-    React.createElement("input", { onChange: changeHandler, type: "text", name: "bombThree" })))), /*#__PURE__*/
+    React.createElement("label", { className: "label" }, "Bomb ID #"), /*#__PURE__*/
+    React.createElement("input", {
+      onChange: changeHandler,
+      type: "text",
+      name: "bombThree",
+      placeholder: "Bomb ID #",
+      autocomplete: "off" })))), /*#__PURE__*/
+
 
 
 
