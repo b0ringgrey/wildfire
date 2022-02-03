@@ -1,12 +1,12 @@
 const Form = () => {
   const [state, setState] = React.useState({
-    bombOne:
-    "https://ipfs.io/ipfs/QmQKWCoR8sz9r1mERBrZ67wUqSJXpDdgV3ETJeDhAZ7uaR/6020.png",
-    bombTwo:
-    "https://ipfs.io/ipfs/QmQKWCoR8sz9r1mERBrZ67wUqSJXpDdgV3ETJeDhAZ7uaR/11749.png",
-    bombThree:
-    "https://ipfs.io/ipfs/QmQKWCoR8sz9r1mERBrZ67wUqSJXpDdgV3ETJeDhAZ7uaR/21065.png" });
+    bombOne: "6020",
+    bombTwo: "11749",
+    bombThree: "21065" });
 
+
+  const ipfsAbs =
+  "https://ipfs.io/ipfs/QmQKWCoR8sz9r1mERBrZ67wUqSJXpDdgV3ETJeDhAZ7uaR/";
 
   const submitHandler = e => {
     e.preventDefault();
@@ -15,10 +15,7 @@ const Form = () => {
   const changeHandler = e => {
     setState(prev => ({
       ...prev,
-      [e.target.name]:
-      "https://ipfs.io/ipfs/QmQKWCoR8sz9r1mERBrZ67wUqSJXpDdgV3ETJeDhAZ7uaR/" +
-      e.target.value +
-      ".png" }));
+      [e.target.name]: e.target.value }));
 
   };
 
@@ -53,6 +50,7 @@ const Form = () => {
     React.createElement("label", { className: "label" }, "Bomb ID #"), /*#__PURE__*/
     React.createElement("input", {
       onChange: changeHandler,
+      value: state.bombOne,
       type: "text",
       name: "bombOne",
       placeholder: "Bomb ID #",
@@ -63,6 +61,7 @@ const Form = () => {
     React.createElement("label", { className: "label" }, "Bomb ID #"), /*#__PURE__*/
     React.createElement("input", {
       onChange: changeHandler,
+      value: state.bombTwo,
       type: "text",
       name: "bombTwo",
       placeholder: "Bomb ID #",
@@ -73,6 +72,7 @@ const Form = () => {
     React.createElement("label", { className: "label" }, "Bomb ID #"), /*#__PURE__*/
     React.createElement("input", {
       onChange: changeHandler,
+      value: state.bombThree,
       type: "text",
       name: "bombThree",
       placeholder: "Bomb ID #",
@@ -85,17 +85,23 @@ const Form = () => {
     React.createElement("div", {
       class: "wildfire",
       id: "one",
-      style: { backgroundImage: `url(${state.bombOne})` } }), /*#__PURE__*/
+      style: {
+        backgroundImage: `url(${ipfsAbs + state.bombOne + ".png"})` } }), /*#__PURE__*/
+
 
     React.createElement("div", {
       class: "wildfire",
       id: "two",
-      style: { backgroundImage: `url(${state.bombTwo})` } }), /*#__PURE__*/
+      style: {
+        backgroundImage: `url(${ipfsAbs + state.bombTwo + ".png"})` } }), /*#__PURE__*/
+
 
     React.createElement("div", {
       class: "wildfire",
       id: "three",
-      style: { backgroundImage: `url(${state.bombThree})` } }))));
+      style: {
+        backgroundImage: `url(${ipfsAbs + state.bombThree + ".png"})` } }))));
+
 
 
 
