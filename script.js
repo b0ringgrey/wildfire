@@ -1,11 +1,11 @@
 const Form = () => {
   const [state, setState] = React.useState({
     bombOne:
-    "https://ipfs.io/ipfs/QmQKWCoR8sz9r1mERBrZ67wUqSJXpDdgV3ETJeDhAZ7uaR/3873.png",
+    "https://ipfs.io/ipfs/QmQKWCoR8sz9r1mERBrZ67wUqSJXpDdgV3ETJeDhAZ7uaR/6020.png",
     bombTwo:
-    "https://ipfs.io/ipfs/QmQKWCoR8sz9r1mERBrZ67wUqSJXpDdgV3ETJeDhAZ7uaR/2345.png",
+    "https://ipfs.io/ipfs/QmQKWCoR8sz9r1mERBrZ67wUqSJXpDdgV3ETJeDhAZ7uaR/11749.png",
     bombThree:
-    "https://ipfs.io/ipfs/QmQKWCoR8sz9r1mERBrZ67wUqSJXpDdgV3ETJeDhAZ7uaR/134.png" });
+    "https://ipfs.io/ipfs/QmQKWCoR8sz9r1mERBrZ67wUqSJXpDdgV3ETJeDhAZ7uaR/21065.png" });
 
 
   const submitHandler = e => {
