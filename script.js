@@ -30,8 +30,7 @@ const Form = () => {
 
 
     React.createElement("h2", null, "by ", /*#__PURE__*/
-    React.createElement("a", { href: "https://opensea.io/b0ring_gray" }, "boringgrey"), " (", /*#__PURE__*/
-    React.createElement("a", { href: "https://twitter.com/BoringGrey" }, "twitter"), ")"), /*#__PURE__*/
+    React.createElement("a", { href: "https://twitter.com/BoringGrey" }, "boringgrey")), /*#__PURE__*/
 
     React.createElement("h3", null, /*#__PURE__*/
     React.createElement("a", { href: "https://thehundreds.com/blogs/content/firestarters-story-behind-wildfire-flag" }, "The story behind Wildfire")), /*#__PURE__*/
